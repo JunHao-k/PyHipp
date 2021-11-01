@@ -13,6 +13,12 @@
 #SBATCH -e rplhighpass_sort-slurm.%N.%j.err # STDERR
 
 # LOAD MODULES, INSERT CODE, AND RUN YOUR PROGRAMS HERE
+
+/data/miniconda3/bin/conda init
+source ~/.bashrc
+envarg=`/data/src/PyHipp/envlist.py`
+conda activate $envarg
+
 python -u -c "import PyHipp as pyh; \
 	import time; \
 	pyh.RPLHighPass(saveLevel=1); \
@@ -22,4 +28,6 @@ python -u -c "import PyHipp as pyh; \
 	export_mountain_cells.export_mountain_cells(); \
 	print(time.localtime());"
 
+conda deactivate 
+/data/src/PyHipp/envlist.py $envarg
 
