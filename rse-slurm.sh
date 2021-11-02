@@ -23,4 +23,4 @@ python -u -c "import PyHipp as pyh; \
 	print(time.localtime()); \
 	print(time.time()-t0);"
 
-aws sns publish --topic-arn arn:aws:sns:ap-southeast-1:018084650241:awsnotify --message "rseJobDone"
+aws sns publish --topic-arn arn:aws:sns:ap-southeast-1:721468676325:awsnotify --message "rseJobDone"
