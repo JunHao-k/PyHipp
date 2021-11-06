@@ -18,3 +18,8 @@ cmd1="${cmd1} /data/src/PyHipp/fsall-slurm.sh"
 
 echo $cmd1
 eval $cmd1
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 073d4ff0227f98d4247d14dae15a3f40856c0b42
