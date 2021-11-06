@@ -14,14 +14,8 @@
 
 # LOAD MODULES, INSERT CODE, AND RUN YOUR PROGRAMS HERE
 python -u -c "import PyHipp as pyh; \
-<<<<<<< HEAD
 	import time; \
 	pyh.RPLLFP(saveLevel=1); \
 	print(time.localtime());"
 
 
-=======
-import time; \
-pyh.RPLLFP(saveLevel=1); \
-print(time.localtime());"
->>>>>>> upstream/main
